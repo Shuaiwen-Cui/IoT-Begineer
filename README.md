@@ -1,5 +1,7 @@
-# IoT-Begineer
-For practices (Arduino + Raspberry Pi Programming)
+# Online Coursework
+Name: An Introduction to Programming the Internet of Things (IOT) Specialization
+
+Date of Start: Sep 27 2022
 
 The codes here are for assignments of Coursera online course specialization - An Introduction to Programming the Internet of Things (IOT) Specialization
 
