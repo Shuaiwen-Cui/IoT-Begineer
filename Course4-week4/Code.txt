@@ -1,0 +1,24 @@
+import RPi.GPIO as GPIO
+from time import sleep
+GPIO.setmode(GPIO.BCM)
+
+ledPin = 4
+buttonPin = 17
+
+GPIO.setup(ledPin,GPIO.OUT)
+GPIO.setup(buttonPin, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+buttonPress = True
+
+while True:
+    buttonPress = GPIO.input(buttonPin)
+    if buttonPress == False:
+        GPIO.output(ledPin, True)
+        sleep(1)
+    elif buttonPress == True:
+        GPIO.output(ledPin, GPIO.HIGH)
+        sleep(1)
+        GPIO.output(ledPin, GPIO.LOW)
+        sleep(1)
+
+
+Reference:https://github.com/ZeroRaven/blinkyboi#circuit-design
